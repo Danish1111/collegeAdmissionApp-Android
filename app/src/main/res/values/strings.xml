@@ -1,0 +1,271 @@
+<resources>
+    <string name="app_name">ITM INSTITUTE PORTAL</string>
+    <string name="str_hint_user_id">Email Id</string>
+    <string name="str_hint_password">Password</string>
+    <string name="str_forgot_password">Forgot my password?</string>
+    <string name="str_hint_select_dept">Select Department</string>
+    <string name="str_hint_select_issue">Type Issue</string>
+    <string name="str_hint_comments">Comments</string>
+    <string name="str_hint_remarks">Remarks</string>
+    <string name="str_hint_select_source">Select Your Source</string>
+    <string name="str_hint_tell_location">Tell us about the location</string>
+    <string name="str_hint_select_commodity">Select The Commodity</string>
+    <string name="str_hint_type">Type</string>
+    <string name="str_hint_grade">Grade</string>
+    <string name="str_hint_price">Price per 100kgs</string>
+
+    <string name="str_hint_lead_type">Lead Type</string>
+    <string name="str_hint_phone">Contact Number</string>
+    <string name="str_add_business_card">Add Business Card</string>
+
+    <string name="str_hint_starting">Starting</string>
+    <string name="str_hint_working_on">What are you working on?</string>
+    <string name="str_hint_specific_project">Any Specific Project/Warehouse you want to mention</string>
+    <string name="str_hint_name_warehouse">Name Your Warehouse</string>
+    <string name="str_hint_location">Tell us the location</string>
+    <string name="outOfRangeExceptionMessage"> Time value is out of range. \n "hour" value must be between 0 and 24, "minute" value must be between 0 and 60 </string>
+    <string name="outOfRangeExceptionMessage2"> Time value is out of range. \n "hour" value must be between 0 and 12, "minute" value must be between 0 and 60 </string>
+
+    <string name="str_add_document">Add Document</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="dlg_error">Error</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_cancel">Cancel</string>
+    <string name="dlg_loading">Loading…</string>
+    <string name="dlg_choose_image_from">Select photo from…</string>
+    <string name="dlg_retry">Retry</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <!--FONTS-->
+    <string name="DINNextLTProLight">fonts/DINNextLTPro-Light.otf</string>
+    <string name="DINNextLTProMedium">fonts/DINNextLTPro-Medium.otf</string>
+    <string name="DINNextLTProRegular">fonts/DINNextLTPro-Regular.otf</string>
+    <string name="DINNextLTProUltraLight">fonts/DINNextLTPro-UltraLight.otf</string>
+    <string name="DINNextRoundedLTProLight">fonts/DINNextRoundedLTPro-Light.otf</string>
+    <string name="DINNextRoundedLTProMedium">fonts/DINNextRoundedLTPro-Medium.otf</string>
+    <string name="DINNextRoundedLTProRegular">fonts/DINNextRoundedLTPro-Regular.otf</string>
+
+    <string name="GothamSSmBold">fonts/GothamSSm-Bold.otf</string>
+    <string name="GothamSSmBook">fonts/GothamSSm-Book.ttf</string>
+    <string name="GothamSSmBlack">fonts/Gotham-Black.ttf</string>
+    <string name="GothamSSmLight">fonts/GothamSSm-Light.ttf</string>
+    <string name="GothamSSmMedium">fonts/GothamSSm-Medium.ttf</string>
+
+    <string name="GothamBlack">fonts/Gotham-Black.ttf</string>
+    <string name="GothamLight">fonts/Gotham-Light.otf</string>
+    <string name="GothamMedium">fonts/Gotham-Medium.ttf</string>
+    <string name="GothamBook">fonts/Gotham-Book.ttf</string>
+
+    <string name="GothamLightItalic">fonts/Gotham-LightItalic.otf</string>
+
+    <!--ROBOTO-->
+    <string name="RobotoBold">fonts/Roboto/Roboto-Bold.ttf</string>
+    <string name="RobotoLight">fonts/Roboto/Roboto-Light.ttf</string>
+    <string name="RobotoMedium">fonts/Roboto/Roboto-Medium.ttf</string>
+    <string name="RobotoThin">fonts/Roboto/Roboto-Thin.ttf</string>
+    <string name="RobotoRegular">fonts/Roboto/Roboto-Regular.ttf</string>
+    <string name="RobotoItalic">fonts/Roboto/Roboto-Italic.ttf</string>
+
+
+    <!--CROP IMAGE-->
+    <string name="crop_image_activity_title">Select Image</string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">SAVE</string>
+    <string name="pick_image_intent_chooser_title">Select source</string>
+
+
+    <!--MESSAGES-->
+    <string name="went_wrong">Something went wrong</string>
+    <string name="could_not_connect">Could not connect to server</string>
+    <string name="invalid_email">Invalid Email Id</string>
+    <string name="invalid_password">Incorrect Password</string>
+
+    <string name="ok">OK</string>
+    <string name="success">Success</string>
+    <string name="error">Error</string>
+    <string name="warning">Warning</string>
+
+    <!--chairman message-->
+
+    <string name="chairmans_message">As John F Kennedy (35 President of USA) once said “Our progress as a nation can be no swifter than our progress in education. The human mind is our fundamental resource.” It gives me an immense sense of honor , pride and happiness to open the gates for a world class education institution in the brass city of Aligarh ITM!
+
+ITM Aligrah has emerged and evolved from the widely acknowledged group of institutions viz; Institute of technology and management (ITM). The aim of the institution is to translate knowledge into practice so that quality professionals, teachers and researchers can be produced and offered to society at large. ITM Aligarh aspires to create a platform where the business driven city of Aligarh can transform into an educational hab by providing the world class facilities and infrastructure. With the aim of stopping the brain from our city, ITM Aligarh wants to adopt a “Global” approach where the best global practices in the field of education will be implemented by understanding the Local opportunities and challenges.
+
+I am proud of what we have achieved within a short period of time and look at the future with optimism and confidence. I urge you to join us, and witness for yourself how this Institute is an institution with a difference. I am sure that the time you spend here will not only be rewarding but memorable for you. I welcome you to join and experience the uniqueness of the ITM Aligarh.</string>
+
+    <!--secretery message-->
+
+    <string name="secretery_message"> ITM is not merely other educational institution, it is a symbol of ethos, the principal we stand for and deep rooted cultural values. It is the manifestation of morals that are dear to us.
+
+Our enthusiastic team of Management is strong in its conviction and highly motivated and eager to pass the same to the students and faculty. Every year the stupendous performance by our student is a testimony of the untiring efforts of faculty, students and management members. These achivements are constantly reminding us of onerous responsibility shouldered on us by the parents and students. Today, our students can be seen making wonderful progress in their chosen careers.
+
+At this juncture, we rededicate ourselves and it is our constant endeavor to strive to upgrade the teaching and learing facilities and infrastructure that are conducive to stimulative academic environment.</string>
+
+
+    <!--treasurer message-->
+
+    <string name="treasurer_message"> The motive of ITM Aligarh is to develop a gobal perspective to cope –up with the fast changing technology scenario. In addition to this, values with discipline are the hallmark of our college, besides, ensuring quality of the students; here the emphasis is not only on academic excellence but the development of the overall total personality of a student. To achieve this goal, add on courses, training in personality development, and other soft skills are also provided in our College. We take special care to ensure that new ideas are not merely discussed here but executed. Execution of new ideas helps the faculty and students to tread the path of ‘innovation’ which is the slogan of our Institution. As excellence is the only criterion for selection of students, we are confident that in due course, promises will become ‘Achievements’ in their respective fields.
+
+I am delighted that ITM Aligarh has published the College Souvenir-2011. The Editorial board has done a fair job to put up facts before students and parent community. To express one’s thought, College Magazine is the best platform and this is what our students have expressed in terms of contributions towards the magazine. I congratulate Editorial Board for unleashing the potential of the students and making a chapter of ITM Aligarh history.</string>
+
+
+    <!--director message-->
+
+    <string name="director_message">ITM Aligarh is committed to develop leaders trained to excel in today’s rapidly changing business environment. Our focus on experiential learning helps our students to develop an array of functional business skills and provides an education that lasts and evolves over a lifetime. The opportunities for group work in ITM Aligarh campus nurture a habit among students to decide, do and create. The state of the art infrastructure, combined with academic rigor and the high level of industry interaction equip our students to perform to the expectation of the corporate world.
+
+Everyone’s mission at ITM is to develop the all-round personality of the students by making them not only excellent professionals but also good individuals of strong character and moral integrity. Our graduates have better understanding and regard for human values as well as pride in their heritage, culture, and a yearning for perfection. Discipline is a way of life at ITM Aligarh. We inculcate in the young trainees an overwhelming desire to become successful in their careers too.
+
+ITM Aligarh maintains its profound commitment to its students and we make every effort to maintain effective and close relationships between students and faculty. Our students leave us with business – oriented skills, knowledge, self-confidence, maturity, and all other attributes required to take off their professional career most successfully. If these are your aspirations while you search for the right business school, then you should not think twice, you can choose ITM for your MBA course.
+</string>
+
+    <!--our vision-->
+
+    <string name="our_vision">To become an internationally acknowledged institution to generate globally competitive human resource with ethical sense, which is capable of meeting the challenges of the advancing society.</string>
+
+
+    <!--our mission-->
+
+    <string name="our_mission">To provide knowledge based education to our students, relevant to the need of the society and the nation, by inculcating in them the Indian values and ethos.</string>
+
+
+    <!--btech 1st year-->
+
+    <string name="btech_first">The seats will be filled based on UPSEEE/AIEEE merit list Vacant And Management Seat through Direct admission trough UPTU counseling. Candidate should have passed 10+2 examination with Phaysics and Mathematics as compulsory subjects along with one of the chemistry/Biotechnology/Biology And Obtained at last 50% marks 45% in case of candidate belonging to SC/ST category) in the above subjects taken together.</string>
+
+
+    <!--btech lateral entry-->
+
+    <string name="btech_lateral_entry">The Seats will be filled based on UPTU merit list through counseling Vacant And Management Seat through Direct admission The candidates has passed three year polytechnic diploma from an AICTE approved in institution or B.Sc. degree from a university defined by UGC with at leatest 50% marks (45% in case of candidate belonging to SC/ST).</string>
+
+
+    <!--mtech-->
+
+    <string name="mtech">The seats will be filled based on UPSEEE/AIEEE merit list Vacant And Management Seat through Direct admission trough UPTU counseling. Candidate should have passed 10+2 examination with Phaysics and Mathematics as compulsory subjects along with one of the chemistry/Biotechnology/Biology And Obtained at last 50% marks 45% in case of candidate belonging to SC/ST category) in the above subjects taken together.</string>
+
+    <!--ec-->
+    <string name="ec">The undergraduate program aims at providing a balanced exposure to both Electronics and Communication. The special feature of Electronics teaching is the emphasis on VLSI design and the use of CAD tools in its development. On the Communication side, the Department highlights modern technologies like optical fiber, wireless and mobile communication. Students of the Department are given high exposure to computer technology as well.</string>
+
+    <!--computer science-->
+    <string name="cs">This four year program lays emphasis on software And hardware engineering, data and information systems engineering, as well as on networking technologies, wired, optical fiber, and wireless. The Department provides exposure to emerging technologies as well as futuristic technologies like nani-technology, and quantum computing.</string>
+
+    <!--mechanical -->
+
+
+    <string name="mechanical">The objective of an Under graduate course in Mechanical engineering is to impart skills and expertise in the areas of design, manufacturing, mechanics and thermal science that are essential to most sectors of industry. The course familiarizes students to the field of mechanical engineering through an exposition of its disciplines, including structural analysis, mechanism design, fluid flows, and thermal systems.
+The course also makes them familiar with the operation and safety of machine tools. Topics like thermodynamics, heat transfer, fluid mechanics, system dynamics, design, manufacturing etc.. are an integral part of the curriculum. ell.</string>
+
+    <!--it-->
+    <string name="it">This program covers the management of computer based information systems in an organizational context. It has a specific focus on organizational and social aspects of computing. The main aim is to provide you with the knowledge and skills required to develop and manage business information system. More specifically, the program will provide you with the ability to specify, implement, manage and evaluate information systems which are technically, Commercially and Socially feasible and help you have develop critical, analytical and problem solving skills with respect to information system and their management.</string>
+
+    <!--electrical-->
+
+    <string name="electrical">The electrical engineering department graduates who are able to practice electrical engineering to serve state and regional industries, government agencies, or national and international industries. Department prepare graduates for personal and professional success with awareness of and commitment to their ethical and social responsibilities, both as individuals and in team environments. The curriculum closely links to network analysis, power system, electrical machines, electro magnetive field theory, control system.</string>
+
+
+    <!--cs-->
+
+    <string name="civil">The four-year curriculum leading to the bachelor of Technology in Civil Engineering enables the graduate to enter professional practice as an engineer or to continue his or her studies in programs leading to advanced degrees in the following broad fields of specialization: construction engineering and management , environment al engineering, geotechnical engineering, hydrology , materials, structural engineering and mechanics, transportation, and water resources planning and management.</string>
+
+    <!--mba-->
+
+    <string name="mba">The course aims to equip students with the competencies and skills required to become efficient and effective managers. This will be done by providing the students latest and relevant knowledge of management theory and practice. The program is designed to management so that they can face the challenges arising out of present scenario of competitiveness due to globalization of economy.</string>
+
+    <!--mba admisson eligiblity-->
+
+    <string name="mba_eligiblity_criteria">The seats is being filled based on UPMCAT merit list through UPTU counseling. However , if the candidate has passed graduation from any stream and secured more then 50 % marks in graduation (45% in case of candidates belonging to SC/ST.), he/she eligible to apply for admission under management quota.</string>
+
+
+    <!--polytech 1st year-->
+
+    <string name="polytech_first">Seats will be filled based on the counseling of joint entrance exam (JEECUP) of BTE Lucknow. The candidate should have passed 10th standard with at least 50% marks (45% in case of candidate belonging to SC/ST Category).</string>
+
+    <!--polytech 2nd year-->
+
+    <string name="polytech_second">Seats will be filled based on the counseling of joint entrance exam (JEECUP) of BTE Lucknow. The candidate should have passed 10th standard along with two year ITI course in respective specialization.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--lecture theater-->
+
+    <string name="lecture_theater">The lecture halls at ITM are spacious and scientifically designed to ensure that each student has sufficient space and each faculty member has the facilities necessary to address the students. In addition, each lecture hall is equipped with specialized teaching aids such as LCD projectors. All these room are properly ventilated and well-lit, with abundant natural light as well as additional lighting operations.
+
+Centrally Air-Conditioned, Smart and green Academic buildings are designed to ensure comfort, ease and conveniences. Internet connected and multimedia classrooms ensure availability of learning resources in the lecture rooms – virtually bringing the world to the students or taking them where the learning is. .</string>
+
+
+    <!--library -->
+
+    <string name="library">The library at ITM Aligarh is one of the most modern academic resource centre. It serves as the backbone to all academic activity on the campus and is the knowledge centre of ITM Aligarh research oriented mission.
+
+It houses a combination of carefully selected print and digital resources that include text and reference material, journals, magazines, periodicals, on-line resources, and highly respectable databases like Pro Quest for research.
+
+A fully automated, ‘anytime – anywhere’, web based library at ITM Aligarh provides a friendly environment, where students would love to spend time in pursuit of knowledge and academic excellence.
+
+The procurement of academic resource is guided by the Library Committee, which includes student as its members.</string>
+
+
+    <!--digital resource-->
+
+    <string name="digital_resource">
+The Entire campus is the computer centre. Every student carries a laptop and is provided access to the academy’s network and servers. Every student would either bring his/her own laptop as per the specifications prescribed or shall be provided at cost, a new laptop.</string>
+
+
+    <!--cafetaria-->
+
+    <string name="cafeteria">Spread over a hung carpet area of 8000 sq. ft, the cafeteria at ITM is always buzzing with students’ chuckles and laughter. It is an ideal place for socializing and having a great time sipping coffee and feasting on the great food it offers.</string>
+
+
+    <!--auditoriam-->
+    <string name="auditorium">A state –of-the –art auditorium with a seating capacity of 1000 brims with activities throughout the year. Serving as a common platform for the students, faculty and eminent guests to interact.</string>
+
+
+    <!--gym-->
+    <string name="gym">Institute has a state of the art gym with modern workout machine to encourage students to maintain good health. There are separate time slots for gents and ladies to use the facility.</string>
+
+
+    <!--transport-->
+    <string name="transport">The college has one of the most sophisticated and well managed transport system for its faculty and student throughout the city .College buses from every corner of the district are available for the pick and drop facility to the students.</string>
+
+    <!--sport-->
+
+    <string name="sport">At ITM Aligarh sports are an integral part of the main curriculum. They are not only essential for students to remain physically fit, but also provide a welcome relief from the academic rigor.</string>
+
+    <!--hostle-->
+
+    <string name="hostle">ITM has fully furnished accommodation for 50 female students within the campus that is allotted on first come first serve basis. Currently 150 students are availing hostel accommodation arranged by ITM.
+
+Hostel accommodation for the first year students is compulsory except local students staying with their parents.</string>
+
+
+    <!--admission eligiblity-->
+    <string name="admission_eligiblity">Placement Call @ ITM ITM students have high career placement, whether you want to be an engineer or a manager, our placement team helps you to polish your resume, get lucrative internships, and connect you with employers.
+
+Acting as an interface between the industry and the students, our placement team plays an important role in honing students’ over all personality by arranging seminars, mock GDs and interviews, workshops, industrial training and industrial visits. The goal is to increase students’ employability</string>
+
+
+    <!--industry interaction-->
+    <string name="industry_interaction">Every student undergoes Industrial training for duration of 5 week This helps in giving them real industry exposure. Industry interaction is done through guest lectures and industrial visits for bridging the gap between the theoretical and practical aspects of the curriculum.</string>
+
+    <!--the campus-->
+
+    <string name="the_campus">At the threshold of a new century and millennium, the time has come once again for Chedi Lal Madan Lal Trust to diversify itself into new field of quality education. ITM is committed for academic credibility as we are offering dynamic undergraduate and postgraduate programs, industry Interface, Research and Consultancy, System Practices, Placements, Training And Support Programs that enhances confidence in the field of employment opportunities to its students.
+
+ITM is approved by All India Council for Technical Education, New Delhi (AICTE) and in affiliated to Uttar Pradesh Technical University, Lucknow (Code-341). The College commenced in the Academic Session 2008-09. It is located on the sprawling surrounding of nature at Aligarh –Palwal-Delhi Road, Karsua, Aligarh (UP).</string>
+
+
+    <string name="location">ITM is located at a distance of 8 km the city in between the green and meadows of the farmers. The lush green residential campus spread over more than 10 acres of land, with sprawling lawns and playground, is aesthetically planned and designed with modern facilities to provide congenial environment for the students pursuing their studies, away from the hustle and bustle of city life. The campus has fully developed separate independent buildings and academic facilities. ITM is also developing the infrastructure for further expansion in other specialization.</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_map">MapActivity</string>
+
+</resources>

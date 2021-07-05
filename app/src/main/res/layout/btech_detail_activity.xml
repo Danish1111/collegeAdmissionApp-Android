@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        style="@style/MatchWidth"
+        android:background="@color/status_red"
+        android:elevation="6dp"
+        android:orientation="horizontal">
+
+        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+            style="@style/WrapContent"
+            app:mrl_rippleOverlay="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_navigation"
+                style="@style/WrapContent"
+                android:layout_gravity="center_vertical"
+                android:padding="20dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_left_arrow"
+                app:tint="@color/white" />
+        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+        <LinearLayout
+            style="@style/WrapContent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:id="@+id/tv_header_title"
+                style="@style/WrapContent"
+                android:padding="15dp"
+                android:text="BTech"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:customFont="@string/GothamMedium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView style="@style/MatchWidth">
+
+        <LinearLayout
+            style="@style/MatchWidth"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:background="#F9EBEA"
+                android:orientation="vertical">
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Electronics And Communication "
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="18dp"
+                    app:customFont="@string/GothamMedium" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:text="Seat:90"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Objective of Course"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="15dp"
+                    app:customFont="@string/GothamMedium" />
+
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="false"
+                    android:text="@string/ec"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_et" />
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:background="#EAF2F8"
+                android:orientation="vertical">
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Computer Science"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="18dp"
+                    app:customFont="@string/GothamMedium" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:text="Seat:90"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Objective of Course"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="15dp"
+                    app:customFont="@string/GothamMedium" />
+
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="false"
+                    android:text="@string/cs"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_et" />
+
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:background="#FEF9E7"
+                android:orientation="vertical">
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Mechanical"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="18dp"
+                    app:customFont="@string/GothamMedium" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:text="Seat:120"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Objective of Course"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="15dp"
+                    app:customFont="@string/GothamMedium" />
+
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="false"
+                    android:text="@string/mechanical"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_et" />
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:background="#EBDEF0"
+                android:orientation="vertical">
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Information Technology"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="18dp"
+                    app:customFont="@string/GothamMedium" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:text="Seat:120"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Objective of Course"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="15dp"
+                    app:customFont="@string/GothamMedium" />
+
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="false"
+                    android:text="@string/it"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_et" />
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:background="#FBEEE6"
+                android:orientation="vertical">
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Electrical "
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="18dp"
+                    app:customFont="@string/GothamMedium" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:text="Seat:60"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Objective of Course"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="15dp"
+                    app:customFont="@string/GothamMedium" />
+
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="false"
+                    android:text="@string/electrical"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_et" />
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:background="@color/gray_et"
+                android:orientation="vertical">
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Civil Engineering "
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="18dp"
+                    app:customFont="@string/GothamMedium" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:text="Seat:60"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="Objective of Course"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="15dp"
+                    app:customFont="@string/GothamMedium" />
+
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="false"
+                    android:text="@string/civil"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_et" />
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        style="@style/MatchWidth"
+        app:cardCornerRadius="4dp"
+        android:layout_margin="10dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:id="@+id/linearlayout_auction"
+            style="@style/MatchParent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:id="@+id/ll_parent_layout"
+                style="@style/MatchWidth"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <!--first layout-->
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/WrapContent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="Name"
+
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif" />
+
+                    <LinearLayout
+                        style="@style/WrapContent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/WrapContent"
+                            android:id="@+id/tv_name"
+                            android:gravity="center"
+                            android:text="Danish Farooq Ahmad khanna"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/vertical_divider" />
+
+                <!--second layout-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        style="@style/WrapContent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="Coarse"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif" />
+
+                    <LinearLayout
+                        style="@style/WrapContent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            style="@style/WrapContent"
+                            android:gravity="center"
+                            android:id="@+id/tv_coarse"
+                            android:text="Danish Farooq Ahmad khanna"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/view_middle"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@color/vertical_divider" />
+
+
+                <!--  third layout-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/textViewPlus10"
+                        style="@style/WrapContent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="stream"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif" />
+
+                    <LinearLayout
+                        style="@style/WrapContent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/tv_stream"
+                            style="@style/WrapContent"
+                            android:gravity="center"
+                            android:text="Danish Farooq Ahmad khanna"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--last layout of footer-->
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:layout_gravity="center_vertical"
+                android:background="#ededed"
+                android:orientation="horizontal"
+                android:padding="6dp">
+
+                <LinearLayout
+                    style="@style/MatchWidth"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        style="@style/WrapContent"
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="sans-serif"
+                        android:text="danish.itm@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="13sp" />
+
+
+                </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        style="@style/WrapContent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/counter_rectangle_shape_green"
+                        android:padding="6dp"
+                        android:text="Ph-834873487384734"
+                        android:textColor="@color/white"
+
+                        android:textSize="13sp"
+                        android:fontFamily="sans-serif" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

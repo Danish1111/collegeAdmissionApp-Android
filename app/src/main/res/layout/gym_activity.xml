@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#FEF5E7"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        style="@style/MatchWidth"
+        android:background="@color/status_red"
+        android:elevation="6dp"
+        android:orientation="horizontal">
+
+        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+            style="@style/WrapContent"
+            app:mrl_rippleOverlay="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_navigation"
+                style="@style/WrapContent"
+                android:layout_gravity="center_vertical"
+                android:padding="15dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_left_arrow"
+                app:tint="@color/white" />
+        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+        <LinearLayout
+            style="@style/WrapContent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:id="@+id/tv_header_title"
+                style="@style/WrapContent"
+                android:padding="15dp"
+                android:text="Gym"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:customFont="@string/GothamMedium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView style="@style/MatchWidth">
+
+        <LinearLayout
+            style="@style/MatchWidth"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gym" />
+
+
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/cobalt_black"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:ellipsize="end"
+                android:textSize="16dp"
+                android:singleLine="false"
+                app:customFont="@string/GothamMedium"
+                android:text="Gym"
+                />
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:singleLine="false"
+                android:text="@string/gym"
+                android:textColor="@color/cobalt_black"
+                app:customFont="@string/GothamBook" />
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

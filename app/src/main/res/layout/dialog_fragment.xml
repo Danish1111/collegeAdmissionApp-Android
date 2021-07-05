@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/root_layout"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        style="@style/MatchWidth"
+        android:background="@color/status_red"
+        android:elevation="6dp"
+        android:orientation="horizontal">
+
+        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+            style="@style/WrapContent"
+            app:mrl_rippleOverlay="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_navigation"
+                android:tint="@color/black"
+                style="@style/WrapContent"
+                app:tint="@color/white"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_left_arrow"
+                android:padding="15dp" />
+        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+        <LinearLayout
+            style="@style/WrapContent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:id="@+id/tv_header_title"
+                style="@style/WrapContent"
+                android:padding="15dp"
+                android:text="Admission Queries"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:customFont="@string/GothamMedium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_below="@+id/edittext_username_la"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/counter_rectangle_shape"
+            android:padding="15dp"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="10dp"
+            android:inputType="textPassword"
+            android:hint="Enter Password" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:mrl_rippleOverlay="true">
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/auction_background_light_blue"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

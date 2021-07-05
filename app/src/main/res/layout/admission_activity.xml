@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_layout"
+    android:focusableInTouchMode="true"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        style="@style/MatchWidth"
+        android:background="@color/status_red"
+        android:elevation="6dp"
+        android:orientation="horizontal">
+
+        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+            style="@style/WrapContent"
+            app:mrl_rippleOverlay="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_navigation"
+                style="@style/WrapContent"
+                android:layout_gravity="center_vertical"
+                android:padding="15dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_left_arrow"
+                app:tint="@color/white" />
+        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+        <LinearLayout
+            style="@style/WrapContent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+            android:id="@+id/tv_header_title"
+            style="@style/WrapContent"
+            android:padding="15dp"
+            android:text="Admission Query"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:customFont="@string/GothamMedium" />
+
+
+        </LinearLayout>
+
+        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+            style="@style/WrapContent"
+            android:layout_alignParentRight="true"
+            app:mrl_rippleOverlay="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_more"
+                style="@style/WrapContent"
+                android:layout_gravity="center_vertical"
+                android:padding="15dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_more"
+                app:tint="@color/white" />
+        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/MatchParent"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            style="@style/MatchWidth"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Your Name "
+                    android:paddingTop="15dp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textSize="16dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_mobile_no"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:hint="Mobile Number"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:paddingTop="15dp"
+                    android:textSize="16dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_email"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:paddingTop="15dp"
+                    android:textSize="16dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_course"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Course"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingTop="15dp"
+                    android:textSize="16dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+
+                <EditText
+                    android:id="@+id/et_stream"
+                    style="@style/StyledTilEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Stream"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingTop="15dp"
+                    android:textSize="16dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:mrl_rippleOverlay="true">
+
+            <TextView
+                android:id="@+id/tv_submit"
+                android:layout_width="match_parent"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/auction_background_light_blue"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="24dp" />
+            </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

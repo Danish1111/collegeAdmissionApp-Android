@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#F8F9F9"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        style="@style/MatchWidth"
+        android:background="@color/status_red"
+        android:elevation="6dp"
+        android:orientation="horizontal">
+
+        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+            style="@style/WrapContent"
+            app:mrl_rippleOverlay="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_navigation"
+                style="@style/WrapContent"
+                android:layout_gravity="center_vertical"
+                android:padding="15dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_left_arrow"
+                app:tint="@color/white" />
+        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+        <LinearLayout
+            style="@style/WrapContent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:id="@+id/tv_header_title"
+                style="@style/WrapContent"
+                android:padding="15dp"
+                android:text="Placements"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:customFont="@string/GothamMedium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView style="@style/MatchWidth">
+
+        <LinearLayout
+            style="@style/MatchWidth"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/recruters" />
+
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="false"
+                android:text="Mr. Nazish Laeiq"
+                android:textColor="@color/cobalt_black"
+                android:textSize="16dp"
+                app:customFont="@string/GothamMedium" />
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:singleLine="false"
+                android:text="Manager - Corporate Relations, Institute of Technology And Management, Aligarh"
+                android:textColor="@color/cobalt_black"
+                app:customFont="@string/GothamBook" />
+
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:singleLine="false"
+                android:text="Address - Aligarh-Palwal-Delhi Road, Karsua, Aligarh - 282001"
+                android:textColor="@color/cobalt_black"
+                app:customFont="@string/GothamBook" />
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:singleLine="false"
+                android:text="Mobile No. : +91–8475001112, 7351300094"
+                android:textColor="@color/cobalt_black"
+                app:customFont="@string/GothamBook" />
+
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:singleLine="false"
+                android:text="E-mail :nazish.laeiq@gmail.com, placement.itmaligarh@gmail.com"
+                android:textColor="@color/cobalt_black"
+                app:customFont="@string/GothamBook" />
+
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="false"
+                android:text="Admission Eligibility"
+                android:textColor="@color/cobalt_black"
+                android:textSize="16dp"
+                app:customFont="@string/GothamMedium" />
+
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:singleLine="false"
+                android:text="@string/admission_eligiblity"
+                android:textColor="@color/cobalt_black"
+                app:customFont="@string/GothamBook" />
+
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:singleLine="false"
+                android:text="Industry Interaction"
+                android:textColor="@color/cobalt_black"
+                android:textSize="16dp"
+                app:customFont="@string/GothamMedium" />
+
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="20dp"
+                android:singleLine="false"
+                android:text="@string/industry_interaction"
+                android:textColor="@color/cobalt_black"
+                app:customFont="@string/GothamBook" />
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

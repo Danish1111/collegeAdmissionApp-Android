@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.core.MainActivity">
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        style="@style/MatchWidth"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            style="@style/MatchWidth"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/counter_rectangle_shape"
+                android:layout_height="wrap_content">
+
+                <com.example.abc.itmcollegealigarh.viewpager.ViewPagerCustomDuration
+                    android:id="@+id/viewPager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:layout_alignParentTop="true" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    style="@style/MatchWidth"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/MatchWidth"
+                        android:layout_margin="10dp">
+
+                        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout style="@style/MatchWidth">
+
+                            <LinearLayout
+                                android:id="@+id/ll_about_institution"
+                                style="@style/MatchWidth"
+                                android:background="@drawable/counter_rectangle_shape"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    style="@style/MatchWidth"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="15dp"
+                                    app:srcCompat="@drawable/ic_library"
+                                    android:tint="@color/status_red" />
+
+
+                                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                                    style="@style/MatchWidth"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="About Institution"
+                                    app:customFont="@string/GothamBook" />
+
+
+                            </LinearLayout>
+
+
+                        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MatchWidth"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/MatchWidth"
+                        android:layout_margin="10dp">
+
+                        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout style="@style/MatchWidth">
+
+                            <LinearLayout
+                                android:id="@+id/ll_programs"
+                                style="@style/MatchWidth"
+                                android:background="@drawable/counter_rectangle_shape"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    style="@style/MatchWidth"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="15dp"
+                                    app:srcCompat="@drawable/ic_books"
+                                    android:tint="@color/status_red" />
+
+
+                                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                                    style="@style/MatchWidth"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Programs"
+                                    app:customFont="@string/GothamBook" />
+
+
+                            </LinearLayout>
+
+                        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    style="@style/MatchWidth"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/MatchWidth"
+                        android:layout_margin="10dp">
+
+                        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout style="@style/MatchWidth">
+
+                            <LinearLayout
+                                style="@style/MatchWidth"
+                                android:background="@drawable/counter_rectangle_shape"
+                                android:id="@+id/ll_location"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    style="@style/MatchWidth"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="15dp"
+                                    app:srcCompat="@drawable/ic_maps_and_flags" />
+
+
+                                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                                    style="@style/MatchWidth"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Our Location"
+                                    app:customFont="@string/GothamBook" />
+
+
+                            </LinearLayout>
+
+                        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MatchWidth"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/MatchWidth"
+                        android:layout_margin="10dp">
+
+                        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout style="@style/MatchWidth">
+
+                            <LinearLayout
+                                android:id="@+id/ll_infrastucture"
+                                style="@style/MatchWidth"
+                                android:background="@drawable/counter_rectangle_shape"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    style="@style/MatchWidth"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="15dp"
+                                    app:srcCompat="@drawable/ic_commercial_buldings"
+                                    android:tint="@color/status_red" />
+
+
+                                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                                    style="@style/MatchWidth"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Infrastructure"
+                                    app:customFont="@string/GothamBook" />
+
+
+                            </LinearLayout>
+
+                        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    style="@style/MatchWidth"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/MatchWidth"
+                        android:layout_margin="10dp">
+
+                        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout style="@style/MatchWidth">
+
+                            <LinearLayout
+                                android:id="@+id/ll_admission"
+                                style="@style/MatchWidth"
+                                android:background="@drawable/counter_rectangle_shape"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    style="@style/MatchWidth"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="15dp"
+                                    app:srcCompat="@drawable/ic_open_book"
+                                    android:tint="@color/status_red" />
+
+
+                                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                                    style="@style/MatchWidth"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Admission"
+                                    app:customFont="@string/GothamBook" />
+
+
+                            </LinearLayout>
+
+                        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/MatchWidth"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/MatchWidth"
+                        android:layout_margin="10dp">
+
+                        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout style="@style/MatchWidth">
+
+                            <LinearLayout
+                                android:id="@+id/ll_placements"
+                                style="@style/MatchWidth"
+                                android:background="@drawable/counter_rectangle_shape"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    style="@style/MatchWidth"
+                                    android:paddingBottom="5dp"
+                                    android:paddingTop="15dp"
+                                    app:srcCompat="@drawable/ic_interview"
+                                    android:tint="@color/status_red" />
+
+
+                                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                                    style="@style/MatchWidth"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:text="Placement"
+                                    app:customFont="@string/GothamBook" />
+
+
+                            </LinearLayout>
+
+                        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

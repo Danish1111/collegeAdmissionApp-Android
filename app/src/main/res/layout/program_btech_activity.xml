@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        style="@style/MatchWidth"
+        android:background="@color/status_red"
+        android:elevation="6dp"
+        android:orientation="horizontal">
+
+        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+            style="@style/WrapContent"
+            app:mrl_rippleOverlay="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_navigation"
+                style="@style/WrapContent"
+                android:layout_gravity="center_vertical"
+                android:padding="20dp"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_left_arrow"
+                app:tint="@color/white" />
+        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+        <LinearLayout
+            style="@style/WrapContent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:id="@+id/tv_header_title"
+                style="@style/WrapContent"
+                android:padding="15dp"
+                android:text="Vission and Mission"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:customFont="@string/GothamMedium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView style="@style/MatchWidth">
+
+        <LinearLayout
+            style="@style/MatchWidth"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:background="@color/gray_et"
+                android:orientation="vertical">
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="B.Tech. (Bachelor of Technology)"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="16dp"
+                    app:customFont="@string/GothamMedium" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:text="1st year"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="false"
+                    android:text="@string/btech_first"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+
+                <LinearLayout
+                    android:layout_marginBottom="20dp"
+                    style="@style/MatchWidth"
+                    android:gravity="right">
+                    <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                        style="@style/WrapContent"
+                        android:layout_marginRight="10dp"
+                        app:mrl_rippleOverlay="true">
+
+                        <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                            android:layout_width="wrap_content"
+                            android:id="@+id/tv_read_more_btech"
+                            android:padding="10dp"
+                            android:background="@drawable/background_dark_red"
+                            android:layout_height="wrap_content"
+                            android:lineSpacingExtra="5dp"
+                            android:singleLine="false"
+                            android:text="Read More"
+                            android:textColor="@color/white"
+                            app:customFont="@string/GothamBook" />
+
+                    </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_et" />
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:background="#E8F8F5"
+                android:orientation="vertical">
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="B.Tech. (Bachelor of Technology)"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="16dp"
+                    app:customFont="@string/GothamMedium" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:singleLine="false"
+                    android:text="2nd Year (Lateral Entry)"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="false"
+                    android:text="@string/btech_lateral_entry"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_et" />
+
+
+            <LinearLayout
+                style="@style/MatchWidth"
+                android:background="#F4ECF7"
+                android:orientation="vertical">
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:ellipsize="end"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:singleLine="false"
+                    android:text="M.Tech.(Master of Technology)"
+                    android:textColor="@color/cobalt_black"
+                    android:textSize="16dp"
+                    app:customFont="@string/GothamMedium" />
+
+
+
+                <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="20dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"
+                    android:singleLine="false"
+                    android:text="@string/mtech"
+                    android:textColor="@color/cobalt_black"
+                    app:customFont="@string/GothamBook" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black_et" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

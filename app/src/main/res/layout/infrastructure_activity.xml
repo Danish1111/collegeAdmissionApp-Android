@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header_view"
+        style="@style/MatchWidth"
+        android:background="@color/status_red"
+        android:elevation="6dp"
+        android:orientation="horizontal">
+
+        <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+            style="@style/WrapContent"
+            app:mrl_rippleOverlay="true">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/iv_navigation"
+                android:tint="@color/black"
+                style="@style/WrapContent"
+                app:tint="@color/white"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_left_arrow"
+                android:padding="15dp" />
+        </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+        <LinearLayout
+            style="@style/WrapContent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.example.abc.itmcollegealigarh.view.TextViewPlus
+                android:id="@+id/tv_header_title"
+                style="@style/WrapContent"
+                android:padding="15dp"
+                android:text="Infrastructure"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:customFont="@string/GothamMedium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView style="@style/MatchWidth">
+
+        <LinearLayout
+            style="@style/MatchWidth"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/ll_lecture_theater"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:background="@drawable/counter_rectangle_shape"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/lecturetheater"
+                            android:layout_height="120dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lecture Theatre"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/ll_library"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:background="@drawable/counter_rectangle_shape"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/library"
+                            android:layout_height="120dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Library"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+
+                </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/ll_digital_resource"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:background="@drawable/counter_rectangle_shape"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/digitalresource"
+                            android:layout_height="120dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Resources"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/ll_cafeteria"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:background="@drawable/counter_rectangle_shape"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/cafeteria"
+                            android:layout_height="120dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cafeteria"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+
+                </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/ll_auditorium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:background="@drawable/counter_rectangle_shape"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/auditorium"
+                            android:layout_height="120dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Auditorium"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/ll_transport"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:background="@drawable/counter_rectangle_shape"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/transport"
+                            android:layout_height="120dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Transport"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+
+                </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:orientation="horizontal">
+
+                <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/ll_sports"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:background="@drawable/counter_rectangle_shape"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/sports"
+                            android:layout_height="120dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sports"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+                <com.example.abc.itmcollegealigarh.view.MaterialRippleLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:id="@+id/ll_hostel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="2dp"
+                        android:background="@drawable/counter_rectangle_shape"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:background="@drawable/hostle"
+                            android:layout_height="120dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hostel"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="16sp"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+
+                </com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--app:mrl_rippleOverlay="true">-->
+
+            <!--<LinearLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:id="@+id/ll_the_campus"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="2dp">-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:tint="@color/status_red"-->
+            <!--app:srcCompat="@drawable/ic_library" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:paddingBottom="18dp"-->
+            <!--android:paddingTop="18dp"-->
+            <!--android:text="The Campus"-->
+            <!--android:textColor="@color/new_black"-->
+            <!--android:textSize="18dp"-->
+            <!--app:customFont="@string/GothamBook" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/black_et" />-->
+
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--app:mrl_rippleOverlay="true">-->
+
+            <!--<LinearLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:id="@+id/ll_our_mission"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="2dp">-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:tint="@color/status_red"-->
+            <!--app:srcCompat="@drawable/ic_library"  />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:paddingBottom="18dp"-->
+            <!--android:paddingTop="18dp"-->
+            <!--android:text="Our Vission And Mission"-->
+            <!--android:textColor="@color/cobalt_black"-->
+            <!--android:textSize="18dp"-->
+            <!--app:customFont="@string/GothamBook" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/black_et" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--app:mrl_rippleOverlay="true">-->
+
+            <!--<LinearLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:id="@+id/ll_chairman_message"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="2dp">-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:tint="@color/status_red"-->
+            <!--app:srcCompat="@drawable/ic_library"  />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:paddingBottom="18dp"-->
+            <!--android:paddingTop="18dp"-->
+            <!--android:text="Chairman's Message"-->
+            <!--android:textColor="@color/cobalt_black"-->
+            <!--android:textSize="18dp"-->
+            <!--app:customFont="@string/GothamBook" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/black_et" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--app:mrl_rippleOverlay="true">-->
+
+            <!--<LinearLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:id="@+id/ll_secretary_message"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="2dp">-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:tint="@color/status_red"-->
+            <!--app:srcCompat="@drawable/ic_library" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:paddingBottom="18dp"-->
+            <!--android:paddingTop="18dp"-->
+            <!--android:text="Secretary's Message"-->
+            <!--android:textColor="@color/cobalt_black"-->
+            <!--android:textSize="18dp"-->
+            <!--app:customFont="@string/GothamBook" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/black_et" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--app:mrl_rippleOverlay="true">-->
+
+            <!--<LinearLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:id="@+id/ll_treasurer_message"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="2dp">-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:tint="@color/status_red"-->
+            <!--app:srcCompat="@drawable/ic_library" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:paddingBottom="18dp"-->
+            <!--android:paddingTop="18dp"-->
+            <!--android:text="Treasurer's Message"-->
+            <!--android:textColor="@color/cobalt_black"-->
+            <!--android:textSize="18dp"-->
+            <!--app:customFont="@string/GothamBook" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/black_et" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--app:mrl_rippleOverlay="true">-->
+
+            <!--<LinearLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:id="@+id/ll_director_message"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="2dp">-->
+
+            <!--<android.support.v7.widget.AppCompatImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:tint="@color/status_red"-->
+            <!--app:srcCompat="@drawable/ic_library" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:paddingBottom="18dp"-->
+            <!--android:paddingTop="18dp"-->
+            <!--android:text="Director's Message"-->
+            <!--android:textColor="@color/cobalt_black"-->
+            <!--android:textSize="18dp"-->
+            <!--app:customFont="@string/GothamBook" />-->
+
+
+            <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/black_et" />-->
+
+
+        </LinearLayout>
+
+
+
+
+        <!--<LinearLayout-->
+            <!--style="@style/MatchWidth"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+                <!--style="@style/MatchWidth"-->
+                <!--app:mrl_rippleOverlay="true">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/ll_lecture_theater"-->
+                    <!--style="@style/MatchWidth"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="2dp">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:tint="@color/cobalt_black"-->
+                        <!--app:srcCompat="@drawable/ic_commercial_buldings" />-->
+
+                    <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+                        <!--style="@style/MatchWidth"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:paddingTop="18dp"-->
+                        <!--android:paddingBottom="18dp"-->
+                        <!--android:text="Lecture Theatre"-->
+                        <!--android:textColor="@color/cobalt_black"-->
+                        <!--android:textSize="18dp"-->
+                        <!--app:customFont="@string/GothamBook" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/black_et" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+                <!--style="@style/MatchWidth"-->
+                <!--app:mrl_rippleOverlay="true">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/MatchWidth"-->
+                    <!--android:id="@+id/ll_library"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="2dp">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:tint="@color/cobalt_black"-->
+                        <!--app:srcCompat="@drawable/ic_commercial_buldings" />-->
+
+                    <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+                        <!--style="@style/MatchWidth"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:paddingBottom="18dp"-->
+                        <!--android:paddingTop="18dp"-->
+                        <!--android:text="Library"-->
+                        <!--android:textColor="@color/cobalt_black"-->
+                        <!--android:textSize="18dp"-->
+                        <!--app:customFont="@string/GothamBook" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/black_et" />-->
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+                <!--style="@style/MatchWidth"-->
+                <!--app:mrl_rippleOverlay="true">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/MatchWidth"-->
+                    <!--android:id="@+id/ll_digital_resource"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="2dp">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:tint="@color/cobalt_black"-->
+                        <!--app:srcCompat="@drawable/ic_commercial_buldings" />-->
+
+                    <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+                        <!--style="@style/MatchWidth"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:paddingBottom="18dp"-->
+                        <!--android:paddingTop="18dp"-->
+                        <!--android:text="Digital Resources"-->
+                        <!--android:textColor="@color/cobalt_black"-->
+                        <!--android:textSize="18dp"-->
+                        <!--app:customFont="@string/GothamBook" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/black_et" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+                <!--style="@style/MatchWidth"-->
+                <!--app:mrl_rippleOverlay="true">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/MatchWidth"-->
+                    <!--android:id="@+id/ll_cafeteria"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="2dp">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:tint="@color/cobalt_black"-->
+                        <!--app:srcCompat="@drawable/ic_commercial_buldings" />-->
+
+                    <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+                        <!--style="@style/MatchWidth"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:paddingBottom="18dp"-->
+                        <!--android:paddingTop="18dp"-->
+                        <!--android:text="Cafeteria"-->
+                        <!--android:textColor="@color/cobalt_black"-->
+                        <!--android:textSize="18dp"-->
+                        <!--app:customFont="@string/GothamBook" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/black_et" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+                <!--style="@style/MatchWidth"-->
+                <!--app:mrl_rippleOverlay="true">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/MatchWidth"-->
+                    <!--android:id="@+id/ll_auditorium"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="2dp">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:tint="@color/cobalt_black"-->
+                        <!--app:srcCompat="@drawable/ic_commercial_buldings" />-->
+
+                    <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+                        <!--style="@style/MatchWidth"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:paddingBottom="18dp"-->
+                        <!--android:paddingTop="18dp"-->
+                        <!--android:text="Auditorium"-->
+                        <!--android:textColor="@color/cobalt_black"-->
+                        <!--android:textSize="18dp"-->
+                        <!--app:customFont="@string/GothamBook" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/black_et" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+                <!--style="@style/MatchWidth"-->
+                <!--app:mrl_rippleOverlay="true">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/MatchWidth"-->
+                    <!--android:id="@+id/ll_gym"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="2dp">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:tint="@color/cobalt_black"-->
+                        <!--app:srcCompat="@drawable/ic_commercial_buldings" />-->
+
+                    <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+                        <!--style="@style/MatchWidth"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:paddingBottom="18dp"-->
+                        <!--android:paddingTop="18dp"-->
+                        <!--android:text="Gym"-->
+                        <!--android:textColor="@color/cobalt_black"-->
+                        <!--android:textSize="18dp"-->
+                        <!--app:customFont="@string/GothamBook" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/black_et" />-->
+
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+                <!--style="@style/MatchWidth"-->
+                <!--app:mrl_rippleOverlay="true">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/MatchWidth"-->
+                    <!--android:id="@+id/ll_transport"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="2dp">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:tint="@color/cobalt_black"-->
+                        <!--app:srcCompat="@drawable/ic_commercial_buldings" />-->
+
+                    <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+                        <!--style="@style/MatchWidth"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:paddingBottom="18dp"-->
+                        <!--android:paddingTop="18dp"-->
+                        <!--android:text="Transport"-->
+                        <!--android:textColor="@color/cobalt_black"-->
+                        <!--android:textSize="18dp"-->
+                        <!--app:customFont="@string/GothamBook" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/black_et" />-->
+
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+                <!--style="@style/MatchWidth"-->
+                <!--app:mrl_rippleOverlay="true">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/MatchWidth"-->
+                    <!--android:id="@+id/ll_sports"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="2dp">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:tint="@color/cobalt_black"-->
+                        <!--app:srcCompat="@drawable/ic_commercial_buldings" />-->
+
+                    <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+                        <!--style="@style/MatchWidth"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:paddingBottom="18dp"-->
+                        <!--android:paddingTop="18dp"-->
+                        <!--android:text="Sports"-->
+                        <!--android:textColor="@color/cobalt_black"-->
+                        <!--android:textSize="18dp"-->
+                        <!--app:customFont="@string/GothamBook" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/black_et" />-->
+
+            <!--<com.example.abc.itmcollegealigarh.view.MaterialRippleLayout-->
+                <!--style="@style/MatchWidth"-->
+                <!--app:mrl_rippleOverlay="true">-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/MatchWidth"-->
+                    <!--android:id="@+id/ll_hostel"-->
+                    <!--android:gravity="center"-->
+                    <!--android:padding="2dp">-->
+
+                    <!--<android.support.v7.widget.AppCompatImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:tint="@color/cobalt_black"-->
+                        <!--app:srcCompat="@drawable/ic_commercial_buldings" />-->
+
+                    <!--<com.example.abc.itmcollegealigarh.view.TextViewPlus-->
+                        <!--style="@style/MatchWidth"-->
+                        <!--android:layout_marginLeft="25dp"-->
+                        <!--android:paddingBottom="18dp"-->
+                        <!--android:paddingTop="18dp"-->
+                        <!--android:text="Hostel"-->
+                        <!--android:textColor="@color/cobalt_black"-->
+                        <!--android:textSize="18dp"-->
+                        <!--app:customFont="@string/GothamBook" />-->
+
+
+                <!--</LinearLayout>-->
+            <!--</com.example.abc.itmcollegealigarh.view.MaterialRippleLayout>-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/black_et" />-->
+
+
+
+
+        <!--</LinearLayout>-->
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>
